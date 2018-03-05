@@ -26,7 +26,7 @@ require_model('partida.php');
 require_model('regularizacion_iva.php');
 require_model('subcuenta.php');
 
-class contabilidad_regusiva extends fs_controller
+class contabilidad_regusiva_420 extends fs_controller
 {
    public $allow_delete;
    public $aux_regiva;
@@ -44,7 +44,7 @@ class contabilidad_regusiva extends fs_controller
    
    public function __construct()
    {
-      parent::__construct(__CLASS__, 'Modelo 303', 'informes');
+      parent::__construct(__CLASS__, 'Modelo 420', 'informes');
    }
    
    protected function private_core()
@@ -196,7 +196,7 @@ class contabilidad_regusiva extends fs_controller
    
    private function completar_regiva()
    {
-      $this->template = 'ajax/contabilidad_regusiva';
+      $this->template = 'ajax/contabilidad_regusiva_420';
       
       $this->aux_regiva = array();
       

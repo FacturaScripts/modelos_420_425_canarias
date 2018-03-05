@@ -6,7 +6,7 @@
          <div class="page-header">
             <h1>
                <span class="glyphicon glyphicon-book"></span>
-               Modelo 390
+               Modelo 425
                <a class="btn btn-xs btn-default hidden-print" href="{$fsc->url()}" title="Recargar la página">
                   <span class="glyphicon glyphicon-refresh"></span>
                </a>
@@ -19,12 +19,12 @@
                </span>
             </h1>
             <p class="help-block">
-               Modelo 390 de la hacienda española.
+               Modelo 425 de la hacienda canaria.
             </p>
          </div>
       </div>
    </div>
-   <form name="f_390" action="{$fsc->url()}" method="post" class="form">
+   <form name="f_425" action="{$fsc->url()}" method="post" class="form">
       <div class="row hidden-print">
          <div class="col-sm-3">
             <div class="form-group">
@@ -33,7 +33,7 @@
                      <i class="fa fa-calendar" aria-hidden="true"></i>
                      Ejercicio
                   </span>
-                  <select class="form-control" name="codejercicio" onchange="document.f_390.submit()">
+                  <select class="form-control" name="codejercicio" onchange="document.f_425.submit()">
                   {loop="$fsc->ejercicio->all()"}
                      {if="$fsc->sejercicio->codejercicio==$value->codejercicio"}
                      <option value="{$value->codejercicio}" selected="">{$value->nombre}</option>

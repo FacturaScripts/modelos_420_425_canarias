@@ -21,18 +21,18 @@
 require_model('ejercicio.php');
 
 /**
- * Description of modelo_390
+ * Description of modelo_425
  *
  * @author carlos
  */
-class modelo_390 extends fs_controller
+class modelo_425 extends fs_controller
 {
    public $ejercicio;
    public $sejercicio;
    
    public function __construct()
    {
-      parent::__construct(__CLASS__, 'Modelo 390', 'informes');
+      parent::__construct(__CLASS__, 'Modelo 425', 'informes');
    }
    
    protected function private_core()
